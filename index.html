@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Age of Sigmar</title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,900;1,400;1,500&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Sacramento&family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--Mycss-->
+  <link rel="stylesheet" href="style.css">
+  <!--Boostrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <!--Fontawesome script-->
+  <script src="https://kit.fontawesome.com/aa6b15493d.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="title" class="title">
+      <img src="AoS.jpg" alt="AoS">
+    </div>
+  </div>
+  <div class="fasi">
+    <div id="Inizio" class="expandable" onclick="expandFCuor()">
+      <h1>SCHIERA DEL PRESCELTO ETERNO</h1>
+      <div id="InizioTesto" class="hidden">
+        <p><strong>CONDOTTIERO DEL CAOS -> Seguito:</strong> All'inizio del primo round di battaglia, puoi scegliere un'unità di PRESCELTI o GUERRIERI affinché sia il seguito di questa unità</p>
+        <hr>
+        <p><strong>PRESCELTI -> Ricompense del caos:</strong> Dopo lo schieramento, puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
+      </div>
+    </div>
+    <div id="faseEroi" class="expandable" onclick="expandFaseEroi()">
+      <h1>Fase degli Eroi</h1>
+      <div id="faseEroiTesto" class="hidden">
+          <h2>Inizio</h2>
+          <p><strong>ARCHAON -> Occhio di Sheerian: </strong>Tira un dado, con 1-3 l'avversario inizia il primo turno nel prossimo round, con 4-6 inizi tu</p>
+          <hr>
+          <h2>Durante</h2>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS -> Visioni del futuro: </strong>Un'unità mortale interamente entro 12' ha ward 6+ fino alla tua prossima fase degli eroi </p>
+          <h3>Magie</h3>
+          <p><strong>ARCHAON (2) -> Rapidità demoniaca (7,12'''): </strong>Unità con cavalcatura può caricare con 3D6</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Potenza demoniaca (6,18''): </strong>+1 a colpire e +1 a ferire con le armi da mischia</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Brina (8,12'): </strong>Tira un D3, cambia il risultato di uno fra colpire, ferire e rend di un'arma con il risultato</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Ceppi della dannazione (7,12''): </strong>L'unità attacca per ultima</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Maledizione della lingua astiosa (3,12''): </strong>D3 mortali, se fallisci o dissipato, il caster subisce D3 mortali</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Canale del caos (7,12''): </strong>Puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Vigore rovinoso (6,12''): </strong>Fino alla tua prossima fase degli eroi, usa la riga in alto della tabella dei mostri</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Rapidità demoniaca (7,12''): </strong>Unità con cavalcatura può caricare con 3D6</p>
+          <p><strong>Tutte</strong> -> Scudo mistico (5,12'') -> Salvezza +1</p>
+          <p><strong>Tutte</strong> -> Dardo arcano (5,12'') -> All'inizio di una qualsiasi fase fai una mortale, se entro 3'' fai D3 mortali</p>
+          <hr>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>Chiamata a raccolta:</strong> Tira un dado per ogni modello ucciso, per ogni 6 riporta un modello in vita (se l'unità è PRESCELTI, GUERRIERI o CAVALIERI riporta un modello per ogni 5+)</p>
+      </div>
+    </div>
+    <div id="faseMov" class="expandable" onclick="expandFaseMov()">
+      <h1>Fase di Movimento</h1>
+      <div id="faseMovTesto" class="hidden">
+          <h2>Inizio</h2>
+          <p><strong>Durthu</strong>: Sentiero degli spiriti -> Se entro 6'' da verdeggiante, sposta entro 6'' da un altro verdeggiante</p>
+          <p><strong>Tree revenant</strong>: Musico -> Muovi ovunque</p>
+          <hr>
+          <h2>Fine</h2>
+          <p><strong>Alarielle</strong> -> Anfore spirituali -> Evoca</p>
+          <p><strong>Lady</strong> -> Invito all'ira -> Evoca al 2+</p>
+          <p><strong>Tutte</strong> -> Percorrere i sentieri nascosti -> Se entro 9'' da verdeggiante, sposta entro 9'' da altro verdeggiante/p>
+          <hr>
+          <h2><strong>Comandi</strong></h2>
+          <p>A passo di corsa -> Corri a +6''</p>
+          <p>Rischierarsi -> Se entro 9'' da un unità che si è appena mossa, muoviti di D6</p>
+      </div>
+    </div>
+    <div id="faseCar" class="expandable" onclick="expandFaseCar()">
+      <h1>Fase di Carica</h1>
+      <div id="faseCarTesto" class="hidden">
+          <h2>Fine</h2>
+          <p><strong>Bosco</strong> -> Vendicativi spiriti della foresta -> Tira un dado per ogni unità entro 1'' (aggiungi 2 se uno o più maghi o persistenti entro 6'' dal bosco), al 6+ fa D3 mortali</p>
+          <hr>
+          <h2><strong>Comandi</strong></h2>
+          <p>Verso la vittoria -> Ritira la carica</p>
+          <p>Scatenare l'inferno -> I modelli entro 6'' da un'unità nemica sparano con colpire -1</p>
+      </div>
+    </div>
+    <div id="faseCombat" class="expandable" onclick="expandFaseCombat()">
+      <h1>Fase di Combat</h1>
+      <div id="faseCombatTesto" class="hidden">
+          <h2>Inizio</h2>
+          <p><strong>Lady</strong> -> Viticci frementi -> +1 per colpire alla Lady o -1 a colpire per gli attacchi contro la Lady</p>
+          <p><strong>Durthu</strong> -> Gladio -> Scegli un profilo arma, aggiungi D3 attacchi</p>
+          <h2>Durante</h2>
+          <p><strong>Tutte</strong> -> Colpisci e svanisci -> Dopo aver combattuto, se entro 9'' da verdeggiante sposta entro 9'' da un altro verdeggiante</p>
+          <hr>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>Attacco totale :</strong> +1 colpire</p>
+          <p><strong>Difesa totale :</strong> +1 salvezza</p>
+          <p><strong>ARCHAON -> Come io comando: </strong>Fino alla fine della fase, ogni volta che un modello di un'altra unità viene uccisa, esso può combattere</p>
+      </div>
+    </div>
+    <div id="faseShock" class="expandable" onclick="expandFaseShock()">
+      <h1>Fase di Shock</h1>
+      <div id="faseShockTesto" class="hidden">
+          <h2><strong>Comandi</strong></h2>
+          <p>Presenza ispiratrice -> Ignora test di shock</p>
+      </div>
+    </div>
+    <div class="containerUnit">
+      <div id="Alarielle" class="Alarielle box" onclick="expandAlarielle()">
+        <h3>ARCHAON</h3>
+        <div id="AlarielleTesto" class="hidden">
+          <p><strong>Armatura di Morkar: </strong>Ward 5+, inoltre, per ogni 6 fai una mortale entro 3''</p>
+          <p><strong>Corona del dominio: </strong>Le unità entro 12'' non possono ricevere "chiamata e raccolta" e "presenza ispiratrice"</p>
+          <p><strong>Il prescelto eterno: </strong>Tira un dado, al 4+ ignora gli effetti di incantesimi</p>
+          <p><strong>La sterminatrice di re: </strong>Se il tiro per ferire di 2 o più dadi è 6, uccide eroe</p>
+          <p><strong>Tinato a tre teste: </strong> <li>Sputa sozzurra</li> <li>Divora teschi</li> <li>Mangia incantesimi</li></p>
+        </div>
+      </div>
+      <div id="Lady" class="Lady box" onclick="expandLady()">
+        <h3>Lady</h3>
+        <div id="LadyTesto" class="hidden">
+          <p><strong>Corona di verdia</strong> -> Le unità entro 6'' sono considerate entro un bosco</p>
+        </div>
+      </div>
+      <div id="Durthu" class="Durthu box" onclick="expandDurthu()">
+        <h3>Durthu</h3>
+        <div id="DurthuTesto" class="hidden">
+          <p><strong>Guerriero nodoso</strong> -> Ignora i modificatori alla salvezza</p>
+          <p><strong>Gladio</strong> -> Scegli un'arma, aggiungi D3 attacchi</p>
+          <p><strong>Guardiano irascibile</strong> -> +1 agli attacchi della spada se entro 9'' entro verdeggiante</p>
+        </div>
+      </div>
+      </div>
+      <div class="containerUnit">
+      <div id="Arcieri" class="Arcieri box" onclick="expandArcieri()">
+        <h3>Arcieri</h3>
+        <div id="ArcieriTesto" class="hidden">
+          <p><strong>Campione</strong> -> +1 attacchi del campione</p>
+          <p><strong>Frecce di larve</strong> -> Se colpire con arco è = 6, infliggi D3 mortali</p>
+          <p><strong>Spiriti dello zefiro</strong> -> Dopo aver ricevuto il comando "scatenare l'inferno", con 2+ può ritirarsi</p>
+        </div>
+      </div>
+      <div id="Driadi" class="Driadi box" onclick="expandDriadi()">
+        <h3>Driadi</h3>
+        <div id="DriadiTesto" class="hidden">
+          <p><strong>Campione</strong> -> +1 attacchi del campione</p>
+          <p><strong>Benedizioni della foresta</strong> -> -1 a colpire e a ferire se entro 9'' da verdeggiante</p>
+        </div>
+      </div>
+      <div id="TreeRevenant" class="TreeRevenant box" onclick="expandTreeRevenant()">
+        <h3>Tree Revenant</h3>
+        <div id="TreeRevenantTesto" class="hidden">
+          <p><strong>Campione</strong> -> +1 attacchi del campione</p>
+          <p><strong>Alfiere</strong> -> Ammassa a 6''</p>
+          <p><strong>Memorie marziali</strong> -> Può ricevere "attacco totale" e "difesa totale" senza spendere PC</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

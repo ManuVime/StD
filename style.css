@@ -1,0 +1,144 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*{
+    background-color: black;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 50px 50px 50px;
+}
+
+.container img {
+    width: 100%; /* allarga l'immagine al massimo della larghezza del div */
+    height: auto;
+}
+
+#title {
+    width: 100%;
+    margin: 5% auto 0 auto;
+    text-align: center;
+}
+
+#Inizio {
+    margin: 0px auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #d85007;
+}
+
+#faseEroi {
+    width: 80%;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8bc6d;
+}
+
+#faseMov {
+    margin: 0px auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8bc6d;
+}
+
+#faseCar {
+    margin: 0px auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8bc6d;
+}
+
+#faseCombat {
+    margin: 0px auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8bc6d;
+}
+
+#faseShock {
+    margin: 0px auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8bc6d;
+}
+
+li {
+    background-color: #e8bc6d;
+}
+
+.containerUnit {
+   display: flex;
+}
+
+.box {
+    margin: 20px 0 0 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: 50px;
+    background-color: #e8bc6d;
+    display: inline-block;
+    text-align: center;
+}
+
+.expandable {
+    width: 100%;
+    height: 155px;
+}
+
+.expanded {
+    height: 100%;
+    padding: 0 0 50px 0;
+}
+
+h1 {
+    font-size: 4rem;
+    background: none;
+    color: black;
+}
+
+h2 {
+    font-size: 2rem;
+    background: none;
+    color: black;
+}
+
+h3 {
+    font-size: 1.5rem;
+    background: none;
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+    background: none;
+    color: black;
+}
+
+strong {
+    background: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    background-color: #e8bc6d;
+}
+
+.visibleInizio {
+    background-color: #d85007;
+}
