@@ -54,6 +54,14 @@ function expandArchaon() {
     ArchaonTesto.classList.toggle("visible");
 }
 
+function expandLord() {
+    let Lord = document.getElementById("Lord");
+    let LordTesto = document.getElementById("LordTesto");
+    Lord.classList.toggle("expanded");
+    LordTesto.classList.toggle("hidden");
+    LordTesto.classList.toggle("visible");
+}
+
 function expandCaosLord() {
     let caosLord = document.getElementById("caosLord");
     let caosLordTesto = document.getElementById("caosLordTesto");

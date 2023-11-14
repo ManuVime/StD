@@ -127,77 +127,329 @@
           <p><strong>Presenza ispiratrice: </strong>Ignora test di shock</p>
       </div>
     </div>
-    <div class="containerUnit">
-      <div id="Archaon" class="Archaon box" onclick="expandArchaon()">
-        <h3>Archaon</h3>
-        <div id="ArchaonTesto" class="hidden">
-          <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
-          <p><strong>Marchio di Khorne: </strong>+1 attacchi se ha caricato</p>
-          <p><strong>Armatura di Morkar: </strong>Ward 5+, inoltre, per ogni 6 fai una mortale entro 3'' che non può essere negata</p>
-          <p><strong>Corona del dominio: </strong>Le unità entro 12'' non possono ricevere "chiamata e raccolta" e "presenza ispiratrice"</p>
-          <p><strong>Il prescelto eterno: </strong>Tira un dado, al 4+ ignora gli effetti di incantesimi</p>
-          <p><strong>La sterminatrice di re: </strong>Se il tiro per ferire di 2 o più dadi è 6, uccide eroe</p>
-          <p><strong>Titano a tre teste: </strong> 
-            <li><strong>Sputa sozzurra: </strong>Scegli un'unità entro 6'', tira un dado per ogni modello (massimo 7), per ogni 3+ fai una mortale</li> 
-            <li><strong>Divora teschi: </strong>Scegli un modello entro 3'', tira un dado, se il risultato è maggiore della statistica ferite, uccidilo e curati di quella statistica</li> 
-            <li><strong>Mangia incantesimi: </strong>Scegli un incantesimo entro 12'', con 2+ viene dispellato e il lanciatore subisce D3 mortali</li></p>
-        </div>
+  </div>
+  <div class="containerUnit">
+    <div id="Archaon" class="Archaon box" onclick="expandArchaon()">
+      <h3>Archaon</h3>
+      <div id="ArchaonTesto" class="hidden">
+        <p><strong>Mov: </strong>* <strong> Ferite: </strong>25 <strong> Save: </strong>3+ <strong> Coraggio: </strong>10</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Sterminatrice</td>
+            <td>1''</td>
+            <td>4</td>
+            <td>2+</td>
+            <td>3+</td>
+            <td>-2</td>
+            <td>3</td>
+          </tr>
+          <tr class="table">
+            <td>Artigli</td>
+            <td>1''</td>
+            <td>2</td>
+            <td>2+</td>
+            <td>3+</td>
+            <td>-2</td>
+            <td>*</td>
+          </tr>
+          <tr class="table">
+            <td>Code</td>
+            <td>3''</td>
+            <td>2D6</td>
+            <td>4+</td>
+            <td>3+</td>
+            <td>-</td>
+            <td>1</td>
+          </tr>
+          <tr class="table">
+            <td>Teste</td>
+            <td>3''</td>
+            <td>*</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-1</td>
+            <td>2</td>
+          </tr>
+        </table>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Ferite</th>
+            <th>Mov</th>
+            <th>Teste</th>
+            <th>Artigli</th>
+          </tr>
+          <tr class="table">
+            <td>0-10</td>
+            <td>14''</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr class="table">
+            <td>11-15</td>
+            <td>12''</td>
+            <td>5</td>
+            <td>4</td>
+          </tr>
+          <tr class="table">
+            <td>16-20</td>
+            <td>10''</td>
+            <td>4</td>
+            <td>3</td>
+          </tr>
+          <tr class="table">
+            <td>21+</td>
+            <td>8''</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+        </table>
+        <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
+        <p><strong>Marchio di Khorne: </strong>+1 attacchi se ha caricato</p>
+        <p><strong>Armatura di Morkar: </strong>Ward 5+, inoltre, per ogni 6 fai una mortale entro 3'' che non può essere negata</p>
+        <p><strong>Corona del dominio: </strong>Le unità entro 12'' non possono ricevere "chiamata e raccolta" e "presenza ispiratrice"</p>
+        <p><strong>Il prescelto eterno: </strong>Tira un dado, al 4+ ignora gli effetti di incantesimi</p>
+        <p><strong>La sterminatrice di re: </strong>Se il tiro per ferire di 2 o più dadi è 6, uccide eroe</p>
+        <p><strong>Titano a tre teste: </strong> 
+          <li><strong>Sputa sozzurra: </strong>Scegli un'unità entro 6'', tira un dado per ogni modello (massimo 7), per ogni 3+ fai una mortale</li> 
+          <li><strong>Divora teschi: </strong>Scegli un modello entro 3'', tira un dado, se il risultato è maggiore della statistica ferite, uccidilo e curati di quella statistica</li> 
+          <li><strong>Mangia incantesimi: </strong>Scegli un incantesimo entro 12'', con 2+ viene dispellato e il lanciatore subisce D3 mortali</li></p>
       </div>
-      <div id="caosLord" class="caosLord box" onclick="expandCaosLord()">
-        <h3>Condottiero del Caos</h3>
-        <div id="caosLordTesto" class="hidden">
-          <p><strong>Scudo runico del caos: </strong>Ward 5+ contro le mortali</p>
-          <p><strong>Lancia pesante del caos: </strong>+1 danni e +1 impatto della lancia se ha caricato</p>
-          <p><strong>I cavalieri del caos: </strong>Se ha caricato, attacca per primo e i cavalieri interamente entro 12'' attaccano immediatamente dopo</p>
-          <p><strong>Marchio di Khorne: </strong>+1 attacchi se ha caricato</p>
-        </div>
-      </div>
-      <div id="Cavalieri" class="Cavalieri box" onclick="expandCavalieri()">
-        <h3>Cavalieri</h3>
-        <div id="CavalieriTesto" class="hidden">
-          <p><strong>Campione: </strong>+1 attacchi della lancia</p>
-          <p><strong>Alfiere: </strong>+1 coraggio</p>
-          <p><strong>Musico: </strong>Puoi cambiare un dado della carica in 4</p>
-          <p><strong>Carica penetrante: </strong>+1 danni e +1 impatto delle lance se ha caricato</p>
-          <p><strong>Marchio di Khorne: </strong>+1 attacchi se ha caricato</p>
-          <p><strong>Scudi runici del caos: </strong>Ward 5+ contro le mortali</p>
-          <p><strong>Cavalieri del fato nefasto: </strong>Anziché usare la gittata delle lance, posso avere come bersaglio un'unità che si trova entro 1/2'' da un cavaliere entro 1/2'' dal modello attaccante</p>
-        </div>
-      </div>
-      </div>
-      <div class="containerUnit">
-      <div id="Prescelti" class="Prescelti box" onclick="expandPrescelti()">
-        <h3>Prescelti</h3>
-        <div id="PresceltiTesto" class="hidden">
-          <p><strong>Campione: </strong>+1 attacchi del campione</p>
-          <p><strong>Alfiere: </strong>+1 coraggio</p>
-          <p><strong>Musico: </strong>+1 carica</p>
-          <p><strong>Araldi della rovina: </strong>Una volta per battaglia, possono attaccare due volte</p>
-          <p><strong>Taglia anime: </strong>Se il tiro per colpire è 6, aggiungi una mortale</p>
-          <p><strong>Marchio di Slaanesh: </strong>+1 correre e caricare</p>
-        </div>
-      </div>
-      <div id="Guerrieri" class="Guerrieri box" onclick="expandGuerrieri()">
-        <h3>Guerrieri</h3>
-        <div id="GuerrieriTesto" class="hidden">
-          <p><strong>Campione: </strong>+1 attacchi del campione</p>
-          <p><strong>Alfiere: </strong>+1 coraggio</p>
-          <p><strong>Musico: </strong>+1 carica</p>
-          <p><strong>Portatori di pena: </strong>+1 attacchi, se interamente nel territorio nemico o interamente entro 12'' da un obiettivo che non controlli</p>
-          <p><strong>Scudi runici del caos: </strong>Ward al 5+ contro mortali</p>
-          <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
-        </div>
-      </div>
-      <div id="Principe" class="Principe box boxPrincipe" onclick="expandPrincipe()">
-        <h3>Principe demone</h3>
-        <div id="PrincipeTesto" class="hidden">
-          <p><strong>Ali: </strong>Si muove di 12''</p>
-          <p><strong>Aura del caos: </strong>Ward 6+</p>
-          <p><strong>Spada delle forge infernali: </strong>Se colpire è uguale a 6, fai D3 mortali e termina la sequenza</p>
-        </div>
+    </div>
+    <div id="Lord" class="box " onclick="expandLord()">
+      <h3>Lord Stregone</h3>
+      <div id="LordTesto" class="hidden">
+        <p><strong>Mov: </strong>5'' <strong> Ferite: </strong>5 <strong> Save: </strong>4+ <strong> Coraggio: </strong>8</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Bastone</td>
+            <td>2''</td>
+            <td>1</td>
+            <td>4+</td>
+            <td>3+</td>
+            <td>-1</td>
+            <td>D3</td>
+          </tr>
+          <tr class="table">
+            <td>Lama</td>
+            <td>1''</td>
+            <td>2</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-</td>
+            <td>1</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
+  <div class="containerUnit">
+    <div id="caosLord" class="caosLord box" onclick="expandCaosLord()">
+      <h3>Condottiero del Caos</h3>
+      <div id="caosLordTesto" class="hidden">
+        <p><strong>Mov: </strong>10'' <strong> Ferite: </strong>8 <strong> Save: </strong>3+ <strong> Coraggio: </strong>9</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Lancia</td>
+            <td>2''</td>
+            <td>4</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-1</td>
+            <td>1</td>
+          </tr>
+          <tr class="table">
+            <td>Zoccoli</td>
+            <td>1''</td>
+            <td>3</td>
+            <td>4+</td>
+            <td>3+</td>
+            <td>-</td>
+            <td>1</td>
+          </tr>
+        </table>  
+        <p><strong>Scudo runico del caos: </strong>Ward 5+ contro le mortali</p>
+        <p><strong>Lancia pesante del caos: </strong>+1 danni e +1 impatto della lancia se ha caricato</p>
+        <p><strong>I cavalieri del caos: </strong>Se ha caricato, attacca per primo e i cavalieri interamente entro 12'' attaccano immediatamente dopo</p>
+        <p><strong>Marchio di Khorne: </strong>+1 attacchi se ha caricato</p>
+      </div>
+    </div>
+    <div id="Cavalieri" class="Cavalieri box" onclick="expandCavalieri()">
+      <h3>Cavalieri</h3>
+      <div id="CavalieriTesto" class="hidden">
+        <p><strong>Mov: </strong>10'' <strong> Ferite: </strong>3 <strong> Save: </strong>3+ <strong> Coraggio: </strong>7</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Lancia</td>
+            <td>2''</td>
+            <td>3</td>
+            <td>4+</td>
+            <td>3+</td>
+            <td>-1</td>
+            <td>1</td>
+          </tr>
+          <tr class="table">
+            <td>Zoccoli</td>
+            <td>1''</td>
+            <td>2</td>
+            <td>4+</td>
+            <td>4+</td>
+            <td>-</td>
+            <td>1</td>
+          </tr>
+        </table> 
+        <p><strong>Campione: </strong>+1 attacchi della lancia</p>
+        <p><strong>Alfiere: </strong>+1 coraggio</p>
+        <p><strong>Musico: </strong>Puoi cambiare un dado della carica in 4</p>
+        <p><strong>Carica penetrante: </strong>+1 danni e +1 impatto delle lance se ha caricato</p>
+        <p><strong>Marchio di Khorne: </strong>+1 attacchi se ha caricato</p>
+        <p><strong>Scudi runici del caos: </strong>Ward 5+ contro le mortali</p>
+        <p><strong>Cavalieri del fato nefasto: </strong>Anziché usare la gittata delle lance, posso avere come bersaglio un'unità che si trova entro 1/2'' da un cavaliere entro 1/2'' dal modello attaccante</p>
+      </div>
+    </div>
+  </div>
+  <div class="containerUnit">
+        <div id="Prescelti" class="Prescelti box" onclick="expandPrescelti()">
+          <h3>Prescelti</h3>
+          <div id="PresceltiTesto" class="hidden">
+            <p><strong>Mov: </strong>5'' <strong> Ferite: </strong>3 <strong> Save: </strong>3+ <strong> Coraggio: </strong>8</p>
+            <hr>
+            <table class="table">
+              <tr class="table">
+                <th>Arma</th>
+                <th>R</th>
+                <th>A</th>
+                <th>C</th>
+                <th>F</th>
+                <th>R</th>
+                <th>D</th>
+              </tr>
+              <tr class="table">
+                <td>Taglia anime</td>
+                <td>2''</td>
+                <td>3</td>
+                <td>3+</td>
+                <td>3+</td>
+                <td>-1</td>
+                <td>2</td>
+              </tr>
+            </table> 
+            <p><strong>Campione: </strong>+1 attacchi del campione</p>
+            <p><strong>Alfiere: </strong>+1 coraggio</p>
+            <p><strong>Musico: </strong>+1 carica</p>
+            <p><strong>Araldi della rovina: </strong>Una volta per battaglia, possono attaccare due volte</p>
+            <p><strong>Taglia anime: </strong>Se il tiro per colpire è 6, aggiungi una mortale</p>
+            <p><strong>Marchio di Slaanesh: </strong>+1 correre e caricare</p>
+          </div>
+        </div>
+        <div id="Guerrieri" class="Guerrieri box" onclick="expandGuerrieri()">
+          <h3>Guerrieri</h3>
+          <div id="GuerrieriTesto" class="hidden">
+            <p><strong>Mov: </strong>5'' <strong> Ferite: </strong>2 <strong> Save: </strong>3+ <strong> Coraggio: </strong>7</p>
+            <hr>
+            <table class="table">
+              <tr class="table">
+                <th>Arma</th>
+                <th>R</th>
+                <th>A</th>
+                <th>C</th>
+                <th>F</th>
+                <th>R</th>
+                <th>D</th>
+              </tr>
+              <tr class="table">
+                <td>Alabarda stregata</td>
+                <td>2''</td>
+                <td>2</td>
+                <td>4+</td>
+                <td>3+</td>
+                <td>-1</td>
+                <td>1</td>
+              </tr>
+            </table> 
+            <p><strong>Campione: </strong>+1 attacchi del campione</p>
+            <p><strong>Alfiere: </strong>+1 coraggio</p>
+            <p><strong>Musico: </strong>+1 carica</p>
+            <p><strong>Portatori di pena: </strong>+1 attacchi, se interamente nel territorio nemico o interamente entro 12'' da un obiettivo che non controlli</p>
+            <p><strong>Scudi runici del caos: </strong>Ward al 5+ contro mortali</p>
+            <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
+          </div>
+        </div>
+  </div>
+  <div class="containerUnit">
+    <div id="Principe" class="Principe box boxPrincipe" onclick="expandPrincipe()">
+      <h3>Principe demone</h3>
+      <div id="PrincipeTesto" class="hidden">
+        <p><strong>Mov: </strong>8'' <strong> Ferite: </strong>10 <strong> Save: </strong>3+ <strong> Coraggio: </strong>10</p>
+        <hr>
+        <table class="table tablePrincipe">
+          <tr class="table tablePrincipe">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table tablePrincipe">
+            <td>Spada</td>
+            <td>2''</td>
+            <td>5</td>
+            <td>3+</td>
+            <td>4+</td>
+            <td>-1
+            </td>
+            <td>D3</td>
+          </tr>
+        </table>
+        <p><strong>Ali: </strong>Si muove di 12''</p>
+        <p><strong>Aura del caos: </strong>Ward 6+</p>
+        <p><strong>Spada delle forge infernali: </strong>Se colpire è uguale a 6, fai D3 mortali e termina la sequenza</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

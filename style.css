@@ -68,7 +68,7 @@
 }
 
 #faseShock {
-    margin: 0px auto 20px auto;
+    margin: 0px auto 0px auto;
     width: 80%;
     text-align: center;
     border-radius: 30px;
@@ -84,13 +84,14 @@ li {
 }
 
 .box {
-    margin: 20px 0 0 20px;
+    margin: 10px auto;
     border-radius: 10px;
-    width: 30%;
-    height: 50px;
+    width: 40%;
+    height: 70px;
     background-color: #e8bc6d;
     display: inline-block;
     text-align: center;
+    align-items: center;
 }
 
 .boxPrincipe {
@@ -144,5 +145,15 @@ strong {
 }
 
 .visibleInizio {
+    background-color: #d85007;
+}
+
+.table {
+    max-width: 100%;
+    background-color: #e8bc6d;
+}
+
+.tablePrincipe {
+    max-width: 100%;
     background-color: #d85007;
 }
