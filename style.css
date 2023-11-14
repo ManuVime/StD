@@ -93,6 +93,10 @@ li {
     text-align: center;
 }
 
+.boxPrincipe {
+    background-color: #d85007;
+}
+
 .expandable {
     width: 100%;
     height: 155px;
