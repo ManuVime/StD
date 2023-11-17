@@ -28,12 +28,17 @@
       <img src="AoS.jpg" alt="AoS">
     </div>
   </div>
+  <div class="buttonDiv">
+    <button class="button" onclick="changeLord()">test</button>
+  </div>
   <div class="fasi">
     <div id="Inizio" class="expandable" onclick="expandEye()">
       <h1>OCCHIO DEGLI DEI</h1>
       <div id="InizioTesto" class="hidden">
         <p><strong>ARCHAON -> Il signore della guerra favorito:</strong> Dopo aver ricevuto i punti comando, prima dell'inizio del primo turno, aggiungi un marchio del caos a questa unità</p>
         <p><strong>PRESCELTI -> Ricompense del caos:</strong> Dopo lo schieramento, puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
+        <p><strong>CHAOS LORD -> Favorito del Pantheon:</strong> Dopo lo schieramento, puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
+        <p><strong>CHAOS LORD -> Seguito:</strong> All'inizio del primo turno, puoi scegliere un'unità guerrieri o prescelti come suo seguito</p>
       <hr>
         <p><strong>Occhio degli dei: </strong>Alla fine di ogni fase, per ogni eroe o mostro nemico distrutto da un'unità con occhio degli dei, e se ottieni il controllo di un obiettivo precedentemente controllato dall'avversario, tira 2D6 (1D6 +2 se non è eroe)</p>
         <p><strong>2 Regressione a progenie: </strong>L'eroe viene ucciso, ma aggiungi una progenie del caos entro 1''</p>
@@ -105,7 +110,7 @@
           <h2><strong>Comandi</strong></h2>
           <p><strong>Verso la vittoria: </strong>Ritira la carica</p>
           <p><strong>Scatenare l'inferno : </strong>I modelli entro 6'' da un'unità nemica che ha caricato e a più di 3'' dalle altre, sparano con colpire -1</p>
-          <p><strong>Fate scorrere il sangue (Cavalieri, Condottiero e Archaon(Khorne)):</strong> Dopo aver caricato, scegli un'unità entro 1'', al 2+ fai D3 mortali</p>
+          <p><strong>Fate scorrere il sangue (Cavalieri, Condottiero su mount e Archaon(Khorne)):</strong> Dopo aver caricato, scegli un'unità entro 1'', al 2+ fai D3 mortali</p>
           <p><strong>Fatevi sotto e uccidete (Prescelti):</strong> Possono correre e caricare</p>
       </div>
     </div>
@@ -116,7 +121,7 @@
           <p><strong>Attacco totale :</strong> +1 colpire</p>
           <p><strong>Difesa totale :</strong> +1 salvezza</p>
           <p><strong>Uccidere i nemici degni (Stregone, Principe e Archaon):</strong> +1 a ferire contro eroi o mostri</p>
-          <p><strong>Spargete il contagio (Guerrieri e Archaon(Nurgle)):</strong> Tira un dado per ogni unità nemica entro 3'', per ogni 3+ fai D3 mortali</p>
+          <p><strong>Spargete il contagio (Guerrieri, Chaos Lord e Archaon(Nurgle)):</strong> Tira un dado per ogni unità nemica entro 3'', per ogni 3+ fai D3 mortali</p>
           <p><strong>Come io comando (Archaon): </strong>Fino alla fine della fase, ogni volta che un modello di un'altra unità viene uccisa, esso può combattere</p>
       </div>
     </div>
@@ -226,9 +231,83 @@
           <li><strong>Mangia incantesimi: </strong>Scegli un incantesimo entro 12'', con 2+ viene dispellato e il lanciatore subisce D3 mortali</li></p>
       </div>
     </div>
-    <div id="Lord" class="box " onclick="expandLord()">
-      <h3>Lord Stregone</h3>
-      <div id="LordTesto" class="hidden">
+    <div id="Principe" class="Principe box" onclick="expandPrincipe()">
+      <h3>Principe demone</h3>
+      <div id="PrincipeTesto" class="hidden">
+        <p><strong>Mov: </strong>8'' <strong> Ferite: </strong>10 <strong> Save: </strong>3+ <strong> Coraggio: </strong>10</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Spada</td>
+            <td>2''</td>
+            <td>5</td>
+            <td>3+</td>
+            <td>4+</td>
+            <td>-1
+            </td>
+            <td>D3</td>
+          </tr>
+        </table>
+        <p><strong>Ali: </strong>Si muove di 12''</p>
+        <p><strong>Aura del caos: </strong>Ward 6+</p>
+        <p><strong>Spada delle forge infernali: </strong>Se colpire è uguale a 6, fai D3 mortali e termina la sequenza</p>
+      </div>
+    </div>
+  </div>
+  <div class="containerUnit">
+    <div id="caosLord" class="box" onclick="expandCaosLord()">
+      <h3>Chaos Lord</h3>
+      <div id="caosLordTesto" class="hidden">
+        <p><strong>Mov: </strong>5'' <strong> Ferite: </strong>6 <strong> Save: </strong>3+ <strong> Coraggio: </strong>9</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Lama mietitrice</td>
+            <td>2''</td>
+            <td>3</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-2</td>
+            <td>2</td>
+          </tr>
+          <tr class="table">
+            <td>Acciaio del demone</td>
+            <td>1''</td>
+            <td>3</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-1</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <p><strong>Demone vincolato: </strong>Se il tiro per colpire dell'acciaio del demone vincolato è 6, infliggi una mortale addizionale</p>
+        <p><strong>Seguito del condottiero: </strong>Prima di allora una ferita o una ferita mortale a questa unità, tira un dado, al 3+ quella ferita è allocata al suo seguito</p>
+        <p><strong>Gloria in battaglia: </strong>Dopo aver combattuto, se il suo seguito è interamente entro 12'', esso attacca immediatamente</p>
+        <p><strong>Corona del conquistatore: </strong>I modelli nemici con 1 o 2 di caratteristica ferite entro 6'' non possono contestare obiettivi</p>
+        <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
+      </div>
+    </div>
+    <div id="caosSorcerer" class="caosSorcerer box" onclick="expandCaosSorcerer()">
+      <h3>Chaos Sorcerer Lord</h3>
+      <div id="caosSorcererTesto" class="hidden">
         <p><strong>Mov: </strong>5'' <strong> Ferite: </strong>5 <strong> Save: </strong>4+ <strong> Coraggio: </strong>8</p>
         <hr>
         <table class="table">
@@ -264,9 +343,9 @@
     </div>
   </div>
   <div class="containerUnit">
-    <div id="caosLord" class="caosLord box" onclick="expandCaosLord()">
+    <div id="caosLordMount" class="caosLordMount box" onclick="expandcaosLordMount()">
       <h3>Condottiero del Caos</h3>
-      <div id="caosLordTesto" class="hidden">
+      <div id="caosLordMountTesto" class="hidden">
         <p><strong>Mov: </strong>10'' <strong> Ferite: </strong>8 <strong> Save: </strong>3+ <strong> Coraggio: </strong>9</p>
         <hr>
         <table class="table">
@@ -415,39 +494,6 @@
             <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
           </div>
         </div>
-  </div>
-  <div class="containerUnit">
-    <div id="Principe" class="Principe box boxPrincipe" onclick="expandPrincipe()">
-      <h3>Principe demone</h3>
-      <div id="PrincipeTesto" class="hidden">
-        <p><strong>Mov: </strong>8'' <strong> Ferite: </strong>10 <strong> Save: </strong>3+ <strong> Coraggio: </strong>10</p>
-        <hr>
-        <table class="table tablePrincipe">
-          <tr class="table tablePrincipe">
-            <th>Arma</th>
-            <th>R</th>
-            <th>A</th>
-            <th>C</th>
-            <th>F</th>
-            <th>R</th>
-            <th>D</th>
-          </tr>
-          <tr class="table tablePrincipe">
-            <td>Spada</td>
-            <td>2''</td>
-            <td>5</td>
-            <td>3+</td>
-            <td>4+</td>
-            <td>-1
-            </td>
-            <td>D3</td>
-          </tr>
-        </table>
-        <p><strong>Ali: </strong>Si muove di 12''</p>
-        <p><strong>Aura del caos: </strong>Ward 6+</p>
-        <p><strong>Spada delle forge infernali: </strong>Se colpire è uguale a 6, fai D3 mortali e termina la sequenza</p>
-      </div>
-    </div>
   </div>
 </div>
 

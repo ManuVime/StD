@@ -1,3 +1,6 @@
+const selectedLord = document.querySelector(".lordBox");
+let selectedLordIndex = 1;
+
 function expandEye() {
     let Inizio = document.getElementById("Inizio");
     let InizioTesto = document.getElementById("InizioTesto");
@@ -54,12 +57,12 @@ function expandArchaon() {
     ArchaonTesto.classList.toggle("visible");
 }
 
-function expandLord() {
-    let Lord = document.getElementById("Lord");
-    let LordTesto = document.getElementById("LordTesto");
-    Lord.classList.toggle("expanded");
-    LordTesto.classList.toggle("hidden");
-    LordTesto.classList.toggle("visible");
+function expandcaosLordMount() {
+    let caosLordMount = document.getElementById("caosLordMount");
+    let caosLordMountTesto = document.getElementById("caosLordMountTesto");
+    caosLordMount.classList.toggle("expanded");
+    caosLordMountTesto.classList.toggle("hidden");
+    caosLordMountTesto.classList.toggle("visible");
 }
 
 function expandCaosLord() {
@@ -68,6 +71,14 @@ function expandCaosLord() {
     caosLord.classList.toggle("expanded");
     caosLordTesto.classList.toggle("hidden");
     caosLordTesto.classList.toggle("visible");
+}
+
+function expandCaosSorcerer() {
+    let caosSorcerer = document.getElementById("caosSorcerer");
+    let caosSorcererTesto = document.getElementById("caosSorcererTesto");
+    caosSorcerer.classList.toggle("expanded");
+    caosSorcererTesto.classList.toggle("hidden");
+    caosSorcererTesto.classList.toggle("visible");
 }
 
 function expandCavalieri() {
@@ -99,5 +110,5 @@ function expandPrincipe() {
     let PrincipeTesto = document.getElementById("PrincipeTesto");
     Principe.classList.toggle("expanded");
     PrincipeTesto.classList.toggle("hidden");
-    PrincipeTesto.classList.toggle("visibleInizio");
+    PrincipeTesto.classList.toggle("visible");
 }
