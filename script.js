@@ -110,5 +110,5 @@ function expandPrincipe() {
     let PrincipeTesto = document.getElementById("PrincipeTesto");
     Principe.classList.toggle("expanded");
     PrincipeTesto.classList.toggle("hidden");
-    PrincipeTesto.classList.toggle("visible");
+    PrincipeTesto.classList.toggle("visibleInizio");
 }

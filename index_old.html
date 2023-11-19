@@ -34,7 +34,9 @@
       <div id="InizioTesto" class="hidden">
         <p><strong>ARCHAON -> Il signore della guerra favorito:</strong> Dopo aver ricevuto i punti comando, prima dell'inizio del primo turno, aggiungi un marchio del caos a questa unità</p>
         <p><strong>PRESCELTI -> Ricompense del caos:</strong> Dopo lo schieramento, puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
-        <hr>
+        <p><strong>CHAOS LORD -> Favorito del Pantheon:</strong> Dopo lo schieramento, puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
+        <p><strong>CHAOS LORD -> Seguito:</strong> All'inizio del primo turno, puoi scegliere un'unità guerrieri o prescelti come suo seguito</p>
+      <hr>
         <p><strong>Occhio degli dei: </strong>Alla fine di ogni fase, per ogni eroe o mostro nemico distrutto da un'unità con occhio degli dei, e se ottieni il controllo di un obiettivo precedentemente controllato dall'avversario, tira 2D6 (1D6 +2 se non è eroe)</p>
         <p><strong>2 Regressione a progenie: </strong>L'eroe viene ucciso, ma aggiungi una progenie del caos entro 1''</p>
         <p><strong>3 Ignorato dagli dei: </strong>Nessun effetto</p>
@@ -51,80 +53,80 @@
     <div id="faseEroi" class="expandable" onclick="expandFaseEroi()">
       <h1>Fase degli Eroi</h1>
       <div id="faseEroiTesto" class="hidden">
-        <h2>Inizio</h2>
-        <p><strong>ARCHAON -> Occhio di Sheerian: </strong>Una volta per battaglia, tira un dado, con 1-3 l'avversario inizia il primo turno nel prossimo round, con 4-6 inizi tu</p>
-        <p><strong>STREGONE DEL CAOS -> Famiglio del Caos: </strong>Una volta per battaglia, può lanciare un incantesimo addizionale</p>
-        <hr>
-        <h2>Azione eroica</h2>
-        <p><strong>Disciplina eroica: </strong>Tira un dado (aggiungi 2 se il tuo generale è stato ucciso), al 4+ fai un punto comando con quell'eroe</p>
-        <p><strong>Volontà eroica: </strong>L'eroe ha un incantesimo in più</p>
-        <p><strong>Momento di gloria: </strong>+1 a ferire e +1 a salvezza (massimo una volta per battaglia a eroe)</p>
-        <p><strong>Recupero eroico: </strong>Scegli un eroe a più di 3'' da nemici. tira 2D6, se il risultato è <= coraggio -> cura D3 ferite</p>
-        <p><strong>Velocità diabolica (Principe): </strong>Attacca per primo</p>
-        <hr>
-        <h2>Tattiche di battaglia</h2>
-        <p><strong>Intimidire gli invasori :</strong>Devi avere più unità amiche interamente fuori dal tuo territorio di quelle nel tuo territorio</p>
-        <p><strong>Rappresaglia :</strong>Distruggi unità che ha distrutto il tuo generale</p>
-        <p><strong>Predominio magico :</strong>Lanciare con successo un incantesimo, e nessun incantesimo è stato dissipato</p>
-        <p><strong>Guidati nel maelstrom :</strong>Carica con un eroe e una linea di battaglia, e almeno una di queste deve stare entro 3'' da un nemico</p>
-        <p><strong>Asservitori del caos :</strong>Scegli un obiettivo entro 12'' da un nemico, non ci devono essere nemici entro 12'' da quell'obiettivo</p>
-        <p><strong>Sete di potere :</strong>Un eroe deve lanciare su Occhio degli dei</p>
-        <p><strong>La marcia della rovina :</strong>Scegli un'unità con un vessillo stregato (Cavalieri e Prescelti), devono essere interamente nel territorio nemico e entro 3'' da un nemico</p>
-        <p><strong>Inseguiteli e abbatteteli :</strong> Almeno 3 unità devono avere caricato</p>
-        <p><strong>Iconoclasti :</strong>Scegli un prete o totem nemico, distruggilo</p>
-        <hr>
-        <h2>Durante</h2>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS -> Visioni del futuro: </strong>Un'unità mortale interamente entro 12' ha ward 6+ fino alla tua prossima fase degli eroi </p>
-        <h3>Magie</h3>
-        <p><strong>ARCHAON (2) -> Rapidità demoniaca (7,12'''): </strong>Unità con cavalcatura può caricare con 3D6</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Potenza demoniaca (6,18''): </strong>+1 a colpire e +1 a ferire con le armi da mischia</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Brina (8,12'): </strong>Tira un D3, cambia il risultato di uno fra colpire, ferire e rend di un'arma con il risultato</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Ceppi della dannazione (7,12''): </strong>L'unità attacca per ultima</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Maledizione della lingua astiosa (3,12''): </strong>D3 mortali, se fallisci o dissipato, il caster subisce D3 mortali</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Canale del caos (7,12''): </strong>Puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Vigore rovinoso (6,12''): </strong>Fino alla tua prossima fase degli eroi, usa la riga in alto della tabella dei mostri</p>
-        <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Rapidità demoniaca (7,12''): </strong>Unità con cavalcatura può caricare con 3D6</p>
-        <p><strong>Tutte</strong> -> Scudo mistico (5,12'') -> Salvezza +1</p>
-        <p><strong>Tutte</strong> -> Dardo arcano (5,12'') -> All'inizio di una qualsiasi fase fai una mortale, se entro 3'' fai D3 mortali</p>
-        <hr>
-        <h2><strong>Comandi</strong></h2>
-        <p><strong>Chiamata a raccolta:</strong> Scegli una unità a più di 3'' dai nemici. Tira un dado per ogni modello ucciso, per ogni 6 riporta un modello in vita (se l'unità è PRESCELTI, GUERRIERI o CAVALIERI riporta un modello per ogni 5+)</p>
+          <h2>Inizio</h2>
+          <p><strong>ARCHAON -> Occhio di Sheerian: </strong>Una volta per battaglia, tira un dado, con 1-3 l'avversario inizia il primo turno nel prossimo round, con 4-6 inizi tu</p>
+          <p><strong>STREGONE DEL CAOS -> Famiglio del Caos: </strong>Una volta per battaglia, può lanciare un incantesimo addizionale</p>
+          <hr>
+          <h2>Azione eroica</h2>
+          <p><strong>Disciplina eroica: </strong>Tira un dado (aggiungi 2 se il tuo generale è stato ucciso), al 4+ fai un punto comando con quell'eroe</p>
+          <p><strong>Volontà eroica: </strong>L'eroe ha un incantesimo in più</p>
+          <p><strong>Momento di gloria: </strong>+1 a ferire e +1 a salvezza (massimo una volta per battaglia a eroe)</p>
+          <p><strong>Recupero eroico: </strong>Scegli un eroe a più di 3'' da nemici. tira 2D6, se il risultato è <= coraggio -> cura D3 ferite</p>
+          <p><strong>Velocità diabolica (Principe): </strong>Attacca per primo</p>
+          <hr>
+          <h2>Tattiche di battaglia</h2>
+          <p><strong>Intimidire gli invasori :</strong>Devi avere più unità amiche interamente fuori dal tuo territorio di quelle nel tuo territorio</p>
+          <p><strong>Rappresaglia :</strong>Distruggi unità che ha distrutto il tuo generale</p>
+          <p><strong>Predominio magico :</strong>Lanciare con successo un incantesimo, e nessun incantesimo è stato dissipato</p>
+          <p><strong>Guidati nel maelstrom :</strong>Carica con un eroe e una linea di battaglia, e almeno una di queste deve stare entro 3'' da un nemico</p>
+          <p><strong>Asservitori del caos :</strong>Scegli un obiettivo entro 12'' da un nemico, non ci devono essere nemici entro 12'' da quell'obiettivo</p>
+          <p><strong>Sete di potere :</strong>Un eroe deve lanciare su Occhio degli dei</p>
+          <p><strong>La marcia della rovina :</strong>Scegli un'unità con un vessillo stregato (Cavalieri e Prescelti), devono essere interamente nel territorio nemico e entro 3'' da un nemico</p>
+          <p><strong>Inseguiteli e abbatteteli :</strong> Almeno 3 unità devono avere caricato</p>
+          <p><strong>Iconoclasti :</strong>Scegli un prete o totem nemico, distruggilo</p>
+          <hr>
+          <h2>Durante</h2>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS -> Visioni del futuro: </strong>Un'unità mortale interamente entro 12' ha ward 6+ fino alla tua prossima fase degli eroi </p>
+          <h3>Magie</h3>
+          <p><strong>ARCHAON (2) -> Rapidità demoniaca (7,12'''): </strong>Unità con cavalcatura può caricare con 3D6</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Potenza demoniaca (6,18''): </strong>+1 a colpire e +1 a ferire con le armi da mischia</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Brina (8,12'): </strong>Tira un D3, cambia il risultato di uno fra colpire, ferire e rend di un'arma con il risultato</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Ceppi della dannazione (7,12''): </strong>L'unità attacca per ultima</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Maledizione della lingua astiosa (3,12''): </strong>D3 mortali, se fallisci o dissipato, il caster subisce D3 mortali</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Canale del caos (7,12''): </strong>Puoi tirare sulla tabella OCCHIO DEGLI DEI</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Vigore rovinoso (6,12''): </strong>Fino alla tua prossima fase degli eroi, usa la riga in alto della tabella dei mostri</p>
+          <p><strong>SIGNORE DEGLI STREGONI DEL CAOS (1) -> Rapidità demoniaca (7,12''): </strong>Unità con cavalcatura può caricare con 3D6</p>
+          <p><strong>Tutte</strong> -> Scudo mistico (5,12'') -> Salvezza +1</p>
+          <p><strong>Tutte</strong> -> Dardo arcano (5,12'') -> All'inizio di una qualsiasi fase fai una mortale, se entro 3'' fai D3 mortali</p>
+          <hr>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>Chiamata a raccolta:</strong> Scegli una unità a più di 3'' dai nemici. Tira un dado per ogni modello ucciso, per ogni 6 riporta un modello in vita (se l'unità è PRESCELTI, GUERRIERI o CAVALIERI riporta un modello per ogni 5+)</p>
       </div>
     </div>
     <div id="faseMov" class="expandable" onclick="expandFaseMov()">
       <h1>Fase di Movimento</h1>
       <div id="faseMovTesto" class="hidden">
-        <h2><strong>Comandi</strong></h2>
-        <p><strong>A passo di corsa: </strong>Corri a +6''</p>
-        <p><strong>Rischierarsi: </strong>Se entro 9'' da un unità che si è appena mossa e a più di 3'' dalle altre, muoviti di D6</p>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>A passo di corsa: </strong>Corri a +6''</p>
+          <p><strong>Rischierarsi: </strong>Se entro 9'' da un unità che si è appena mossa e a più di 3'' dalle altre, muoviti di D6</p>
       </div>
     </div>
     <div id="faseCar" class="expandable" onclick="expandFaseCar()">
       <h1>Fase di Carica</h1>
       <div id="faseCarTesto" class="hidden">
-        <h2><strong>Comandi</strong></h2>
-        <p><strong>Verso la vittoria: </strong>Ritira la carica</p>
-        <p><strong>Scatenare l'inferno : </strong>I modelli entro 6'' da un'unità nemica che ha caricato e a più di 3'' dalle altre, sparano con colpire -1</p>
-        <p><strong>Fate scorrere il sangue (Cavalieri, Condottiero su mount e Archaon(Khorne)):</strong> Dopo aver caricato, scegli un'unità entro 1'', al 2+ fai D3 mortali</p>
-        <p><strong>Fatevi sotto e uccidete (Prescelti):</strong> Possono correre e caricare</p>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>Verso la vittoria: </strong>Ritira la carica</p>
+          <p><strong>Scatenare l'inferno : </strong>I modelli entro 6'' da un'unità nemica che ha caricato e a più di 3'' dalle altre, sparano con colpire -1</p>
+          <p><strong>Fate scorrere il sangue (Cavalieri, Condottiero su mount e Archaon(Khorne)):</strong> Dopo aver caricato, scegli un'unità entro 1'', al 2+ fai D3 mortali</p>
+          <p><strong>Fatevi sotto e uccidete (Prescelti):</strong> Possono correre e caricare</p>
       </div>
     </div>
     <div id="faseCombat" class="expandable" onclick="expandFaseCombat()">
       <h1>Fase di Combat</h1>
       <div id="faseCombatTesto" class="hidden">
-        <h2><strong>Comandi</strong></h2>
-        <p><strong>Attacco totale :</strong> +1 colpire</p>
-        <p><strong>Difesa totale :</strong> +1 salvezza</p>
-        <p><strong>Uccidere i nemici degni (Stregone, Principe e Archaon):</strong> +1 a ferire contro eroi o mostri</p>
-        <p><strong>Spargete il contagio (Guerrieri e Archaon(Nurgle)):</strong> Tira un dado per ogni unità nemica entro 3'', per ogni 3+ fai D3 mortali</p>
-        <p><strong>Come io comando (Archaon): </strong>Fino alla fine della fase, ogni volta che un modello di un'altra unità viene uccisa, esso può combattere</p>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>Attacco totale :</strong> +1 colpire</p>
+          <p><strong>Difesa totale :</strong> +1 salvezza</p>
+          <p><strong>Uccidere i nemici degni (Stregone, Principe e Archaon):</strong> +1 a ferire contro eroi o mostri</p>
+          <p><strong>Spargete il contagio (Guerrieri, Chaos Lord e Archaon(Nurgle)):</strong> Tira un dado per ogni unità nemica entro 3'', per ogni 3+ fai D3 mortali</p>
+          <p><strong>Come io comando (Archaon): </strong>Fino alla fine della fase, ogni volta che un modello di un'altra unità viene uccisa, esso può combattere</p>
       </div>
     </div>
     <div id="faseShock" class="expandable" onclick="expandFaseShock()">
       <h1>Fase di Shock</h1>
       <div id="faseShockTesto" class="hidden">
-        <h2><strong>Comandi</strong></h2>
-        <p><strong>Presenza ispiratrice: </strong>Ignora test di shock</p>
+          <h2><strong>Comandi</strong></h2>
+          <p><strong>Presenza ispiratrice: </strong>Ignora test di shock</p>
       </div>
     </div>
   </div>
@@ -224,6 +226,80 @@
           <li><strong>Sputa sozzurra: </strong>Scegli un'unità entro 6'', tira un dado per ogni modello (massimo 7), per ogni 3+ fai una mortale</li> 
           <li><strong>Divora teschi: </strong>Scegli un modello entro 3'', tira un dado, se il risultato è maggiore della statistica ferite, uccidilo e curati di quella statistica</li> 
           <li><strong>Mangia incantesimi: </strong>Scegli un incantesimo entro 12'', con 2+ viene dispellato e il lanciatore subisce D3 mortali</li></p>
+      </div>
+    </div>
+    <div id="Principe" class="Principe box" onclick="expandPrincipe()">
+      <h3>Principe demone</h3>
+      <div id="PrincipeTesto" class="hidden">
+        <p><strong>Mov: </strong>8'' <strong> Ferite: </strong>10 <strong> Save: </strong>3+ <strong> Coraggio: </strong>10</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Spada</td>
+            <td>2''</td>
+            <td>5</td>
+            <td>3+</td>
+            <td>4+</td>
+            <td>-1
+            </td>
+            <td>D3</td>
+          </tr>
+        </table>
+        <p><strong>Ali: </strong>Si muove di 12''</p>
+        <p><strong>Aura del caos: </strong>Ward 6+</p>
+        <p><strong>Spada delle forge infernali: </strong>Se colpire è uguale a 6, fai D3 mortali e termina la sequenza</p>
+      </div>
+    </div>
+  </div>
+  <div class="containerUnit">
+    <div id="caosLord" class="box" onclick="expandCaosLord()">
+      <h3>Chaos Lord</h3>
+      <div id="caosLordTesto" class="hidden">
+        <p><strong>Mov: </strong>5'' <strong> Ferite: </strong>6 <strong> Save: </strong>3+ <strong> Coraggio: </strong>9</p>
+        <hr>
+        <table class="table">
+          <tr class="table">
+            <th>Arma</th>
+            <th>R</th>
+            <th>A</th>
+            <th>C</th>
+            <th>F</th>
+            <th>R</th>
+            <th>D</th>
+          </tr>
+          <tr class="table">
+            <td>Lama mietitrice</td>
+            <td>2''</td>
+            <td>3</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-2</td>
+            <td>2</td>
+          </tr>
+          <tr class="table">
+            <td>Acciaio del demone</td>
+            <td>1''</td>
+            <td>3</td>
+            <td>3+</td>
+            <td>3+</td>
+            <td>-1</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <p><strong>Demone vincolato: </strong>Se il tiro per colpire dell'acciaio del demone vincolato è 6, infliggi una mortale addizionale</p>
+        <p><strong>Seguito del condottiero: </strong>Prima di allora una ferita o una ferita mortale a questa unità, tira un dado, al 3+ quella ferita è allocata al suo seguito</p>
+        <p><strong>Gloria in battaglia: </strong>Dopo aver combattuto, se il suo seguito è interamente entro 12'', esso attacca immediatamente</p>
+        <p><strong>Corona del conquistatore: </strong>I modelli nemici con 1 o 2 di caratteristica ferite entro 6'' non possono contestare obiettivi</p>
+        <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
       </div>
     </div>
     <div id="caosSorcerer" class="caosSorcerer box" onclick="expandCaosSorcerer()">
@@ -415,39 +491,6 @@
             <p><strong>Marchio di Nurgle: </strong>-1 ferire delle armi da mischia nemiche</p>
           </div>
         </div>
-  </div>
-  <div class="containerUnit">
-    <div id="Principe" class="Principe box boxPrincipe" onclick="expandPrincipe()">
-      <h3>Principe demone</h3>
-      <div id="PrincipeTesto" class="hidden">
-        <p><strong>Mov: </strong>8'' <strong> Ferite: </strong>10 <strong> Save: </strong>3+ <strong> Coraggio: </strong>10</p>
-        <hr>
-        <table class="table tablePrincipe">
-          <tr class="table tablePrincipe">
-            <th>Arma</th>
-            <th>R</th>
-            <th>A</th>
-            <th>C</th>
-            <th>F</th>
-            <th>R</th>
-            <th>D</th>
-          </tr>
-          <tr class="table tablePrincipe">
-            <td>Spada</td>
-            <td>2''</td>
-            <td>5</td>
-            <td>3+</td>
-            <td>4+</td>
-            <td>-1
-            </td>
-            <td>D3</td>
-          </tr>
-        </table>
-        <p><strong>Ali: </strong>Si muove di 12''</p>
-        <p><strong>Aura del caos: </strong>Ward 6+</p>
-        <p><strong>Spada delle forge infernali: </strong>Se colpire è uguale a 6, fai D3 mortali e termina la sequenza</p>
-      </div>
-    </div>
   </div>
 </div>
 
